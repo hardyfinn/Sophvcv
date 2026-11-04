@@ -1,0 +1,23 @@
+{
+  "slug": "Sophvcv",
+  "name": "Sophvcv",
+  "version": "2.0.0",
+  "license": "MIT",
+  "brand": "Haer",
+  "author": "Haer",
+  "authorEmail": "",
+  "authorUrl": "",
+  "pluginUrl": "",
+  "manualUrl": "",
+  "sourceUrl": "https://github.com/hardyfinn/Sophvcv",
+  "donateUrl": "",
+  "changelogUrl": "",
+  "modules": [
+    {
+      "slug": "Sophie",
+      "name": "Sophie",
+      "description": "Sixteen-pad metallic FM percussion: kicks, clangs, zaps, bells and shards. A port of schwung-sophie for Ableton Move",
+      "tags": ["Drum", "Synth voice", "Polyphonic"]
+    }
+  ]
+}
