@@ -8,17 +8,17 @@ using sophie::Patch;
 using sophie::PADS;
 
 // ---- panel positions in mm (must match res/make_panel.py) ----
-static const float PAD_X[4] = {14.5f, 32.f, 49.5f, 67.f};
+static const float PAD_X[4] = {16.f, 36.f, 56.f, 76.f};
 static const float PAD_ROW_Y[4] = {46.f, 66.f, 86.f, 106.f};  // top row first
 static const float PAD_BTN_DY = -2.6f, PAD_JACK_DY = 5.6f;
-static const float KX[5] = {88.f, 102.f, 116.f, 130.f, 144.f};
+static const float KX[5] = {99.f, 116.f, 133.f, 150.f, 167.f};
 static const float KY[4] = {27.f, 51.f, 75.f, 99.f};
-static const float NOTE_X[3] = {93.f, 107.f, 121.f};
+static const float NOTE_X[3] = {101.f, 118.f, 135.f};
 static const float NOTE_Y = 115.f;
-static const float CV_JX[2] = {161.f, 182.f};
-static const float CV_TX[2] = {169.5f, 190.5f};
+static const float CV_JX[2] = {188.f, 214.f};
+static const float CV_TX[2] = {197.5f, 223.5f};
 static const float CV_Y[5] = {27.f, 41.f, 55.f, 69.f, 83.f};
-static const float OUT_X[3] = {163.f, 177.f, 191.f};
+static const float OUT_X[3] = {192.f, 208.f, 224.f};
 static const float OUT_Y = 109.f;
 
 // Pad 1 is bottom left, pad 16 top right, like a Drum Rack or Ableton Move.
@@ -502,7 +502,7 @@ struct SophieWidget : ModuleWidget {
 		addChild(createWidget<ScrewSilver>(Vec(box.size.x - 2 * RACK_GRID_WIDTH, RACK_GRID_HEIGHT - RACK_GRID_WIDTH)));
 
 		SophieDisplay* d = createWidget<SophieDisplay>(mm2px(Vec(5.0, 12.5)));
-		d->box.size = mm2px(Vec(70.0, 21.0));
+		d->box.size = mm2px(Vec(79.0, 21.0));
 		d->module = module;
 		addChild(d);
 
