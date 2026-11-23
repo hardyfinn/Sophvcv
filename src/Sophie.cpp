@@ -91,7 +91,7 @@ struct Sophie : Module {
 		configParam(SWEEP_PARAM, -100.f, 100.f, 0.f, "Sweep (pitch envelope)", "%");
 		// Decay knob is 0..1, shown as 0.03 s .. 4 s on an exponential curve.
 		configParam(DECAY_PARAM, 0.f, 1.f, decayToKnob(0.3f), "Decay", " s", 4.f / 0.03f, 0.03f);
-		configParam(LEVEL_PARAM, 0.f, 100.f, 100.f, "Level", "%");
+		configParam(LEVEL_PARAM, 0.f, 100.f, 100.f, "Level", "%")->randomizeEnabled = false;
 		configParam(COLOR_PARAM, 0.f, 100.f, 0.f, "Color (frequency ratios)", "%");
 		configParam(METAL_PARAM, 0.f, 100.f, 0.f, "Metal (FM depth)", "%");
 		configParam(FEEDBACK_PARAM, 0.f, 100.f, 0.f, "Feedback", "%");
